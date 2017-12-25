@@ -1,0 +1,23 @@
+/*
+---- px2rem
+@include px2rem(height, 240);
+*/
+body {
+  background: #fff url(../images/bg-red.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+#app {
+  position: relative; }
+  #app div {
+    position: absolute; }
+
+.scene1 .elem1-1 {
+  bottom: 50px;
+  width: 5.72rem;
+  height: 10.97rem;
+  background: transparent url(../images/1-1.png) 0 0 no-repeat;
+  -webkit-background-size: 5.72rem auto;
+  background-size: 5.72rem auto; }
+
+/*# sourceMappingURL=index.css.map */

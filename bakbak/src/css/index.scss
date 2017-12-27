@@ -1,11 +1,12 @@
-/*
----- px2rem
-@include px2rem(height, 240);
-*/
+//定义一个变量和一个mixin
 $baseFontSize: 75;//默认基准font-size
 @mixin px2rem($name, $px){
   #{$name}: $px / $baseFontSize * 1rem;
 }
+// 使用示例：
+//#app {
+//  @include px2rem(width, 240);
+//}
 
 body {
   background: #fff url(../images/bg-red.jpg) 0 0 no-repeat;
@@ -13,18 +14,37 @@ body {
   background-size: cover;
 }
 #app {
-  position: relative;
-  div {
-    position: absolute;
+  >div {
+    position: relative;
+    @include px2rem(width, 750);
+    @include px2rem(height, 1334); //TODO 计算高度
+    div {
+      position: absolute;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
+    }
   }
 }
 .scene1 {
   .elem1-1 {
-    bottom: 50px;
-    width: 5.72rem;
-    height: 10.97rem;
+    @include px2rem(bottom, 50);
+    @include px2rem(width, 729);
+    @include px2rem(height, 823);
     background: transparent url(../images/1-1.png) 0 0 no-repeat;
-    -webkit-background-size: 5.72rem auto;
-    background-size: 5.72rem auto;
+    animation: bounceInLeft 1s 0s both, bounceOutLeft 1s 1s forwards;
+  }
+  .elem1-2 {
+    @include px2rem(bottom, 50);
+    @include px2rem(width, 948);
+    @include px2rem(height, 668);
+    background: transparent url(../images/1-2.png) 0 0 no-repeat;
+    animation: bounceInRight 1s 2s both, bounceOutRight 1s 3s forwards;
+  }
+  .elem1-3 {
+    @include px2rem(width, 458);
+    @include px2rem(height, 938);
+    @include px2rem(left, 150);
+    background: transparent url(../images/1-3.png) 0 0 no-repeat;
+    animation: bounceInUp 1s 4s both, bounceOutDown 1s 5s forwards;
   }
 }

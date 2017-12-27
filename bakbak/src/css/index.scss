@@ -20,31 +20,83 @@ body {
     @include px2rem(height, 1334); //TODO 计算高度
     div {
       position: absolute;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-position: 0 0;
       -webkit-background-size: 100% auto;
       background-size: 100% auto;
     }
   }
 }
 .scene1 {
+  //老人
   .elem1-1 {
-    @include px2rem(bottom, 50);
-    @include px2rem(width, 729);
-    @include px2rem(height, 823);
-    background: transparent url(../images/1-1.png) 0 0 no-repeat;
-    animation: bounceInLeft 1s 0s both, bounceOutLeft 1s 1s forwards;
+    left: 0;
+    @include px2rem(bottom, 200);
+    @include px2rem(width, 600);
+    @include px2rem(height, 823 * 600 / 729);
+    background-image: url(../images/1-1.png);
+    animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards;
   }
+  //人和小狗
   .elem1-2 {
-    @include px2rem(bottom, 50);
-    @include px2rem(width, 948);
-    @include px2rem(height, 668);
-    background: transparent url(../images/1-2.png) 0 0 no-repeat;
-    animation: bounceInRight 1s 2s both, bounceOutRight 1s 3s forwards;
+    right: 0;
+    @include px2rem(bottom, 200);
+    @include px2rem(width, 700);
+    @include px2rem(height, 668 * 700 / 800);
+    background-image: url(../images/1-2.png);
+    animation: bounceInRight 1s 3s both, fadeOut .3s 4s forwards;
   }
+  //炮仗
   .elem1-3 {
-    @include px2rem(width, 458);
-    @include px2rem(height, 938);
-    @include px2rem(left, 150);
-    background: transparent url(../images/1-3.png) 0 0 no-repeat;
-    animation: bounceInUp 1s 4s both, bounceOutDown 1s 5s forwards;
+    @include px2rem(bottom, -60);
+    @include px2rem(width, 400);
+    @include px2rem(height, 938 * 400 / 458);
+    @include px2rem(left, 200);
+    background-image: url(../images/1-3.png);
+    animation: fadeInUp 1s 4s both, fadeOut .5s 5s forwards;
+  }
+  //组合
+  .elem1-4,
+  .elem1-5,
+  .elem1-6 {
+    animation: fadeInDown 1s 5s both, fadeOut 1s 6.5s forwards;
+  }
+  .elem1-4 {
+    left: 0;
+    @include px2rem(bottom, 200);
+    @include px2rem(width, 260);
+    @include px2rem(height, 823 * 260 / 729);
+    background-image: url(../images/1-1.png);
+  }
+  .elem1-5 {
+    right: 0;
+    @include px2rem(bottom, 220);
+    @include px2rem(width, 320);
+    @include px2rem(height, 666 * 320 / 948);
+    background-image: url(../images/1-2.png);
+  }
+  .elem1-6 {
+    @include px2rem(bottom, 210);
+    @include px2rem(width, 70);
+    @include px2rem(height, 938 * 70 / 458);
+    @include px2rem(left, 320);
+    background-image: url(../images/1-3.png);
+  }
+  //闪光
+  .elem1-7 {
+    @include px2rem(width, 750);
+    @include px2rem(height, 1334); // TODO
+    background-color: #fff!important;
+    animation: flashO .5s 6s both;
+  }
+  //烟花
+  .elem1-8 {
+    @include px2rem(top, 40);
+    @include px2rem(width, 500);
+    @include px2rem(height, 1332 * 500 / 632);
+    @include px2rem(left, 125);
+    background-image: url(../images/1-4.png);
+    animation: fadeIn .1s 6s backwards, fadeOut 1s 6.5s forwards;
   }
 }

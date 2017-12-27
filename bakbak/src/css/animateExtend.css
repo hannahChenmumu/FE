@@ -1,0 +1,9 @@
+@keyframes flashO {
+  from, to {
+    opacity: 0; }
+  20%, 50% {
+    opacity: 1; } }
+.flashO {
+  animation-name: flashO; }
+
+/*# sourceMappingURL=animateExtend.css.map */

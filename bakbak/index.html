@@ -26,10 +26,14 @@
     <div id="app" :class="scene">
         <div v-html="elems"></div>
 
-        <audio src="./src/media/guiyangtanqi-320.mp3" controls autoplay></audio>
+        <audio id="audio"
+               src="./src/media/guiyangtanqi-320.mp3"
+               preload="auto"></audio>
     </div>
 
+    <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.js"></script>
     <script src="./src/libs/vue.min.js"></script>
+    <script src="./src/libs/audio.js"></script>
     <script src="./src/script/index.js"></script>
 </body>
 </html>

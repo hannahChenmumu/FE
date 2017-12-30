@@ -42,9 +42,10 @@ new Vue({
 
         $audio.load()
 
-        self.setInterval(function(){
+        var time1 = self.setInterval(function(){
             if ($audio.readyState ==4 ){
                 _self.statusDl = true
+                alearInterval(time1)
             }
         },50)
 

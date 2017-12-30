@@ -15,7 +15,6 @@ new Vue({
             var pageHeight = $(window).height()
             console.log(pageHeight)
             $('#app>div').css('height', pageHeight)
-            $('.scene1 .elem0-7').css('height', pageHeight)
         },
         startAnimation: function(){
             this.statusTap = true
@@ -29,6 +28,9 @@ new Vue({
                 this.elems = '<div class="elem0-1"></div><div class="elem0-2"></div><div class="elem0-3"></div><div class="elem0-4"></div><div class="elem0-5"></div><div class="elem0-6"></div><div class="elem0-7"></div><div class="elem0-8"></div><div class="elem1-1"></div><div class="elem1-2"></div><div class="elem1-3"></div><div class="elem1-4"></div>'
 
             // }, 6000)
+            $('body').bind('touchmove', function(e){
+                e.preventDefault()
+            })
         },
     },
     watch:{
@@ -53,6 +55,7 @@ new Vue({
             // }
         })
         document.removeEventListener("touchstart", function(){})
+
         // 微信
         document.addEventListener("WeixinJSBridgeReady", function () {
             $audio.play();
@@ -61,17 +64,5 @@ new Vue({
             $audio.play();
         }, false);
 
-
-        /*if(_self.loadingMode){
-            // _self.elems = '<div class="loading">LOADING...</div>'
-            _self.elems = '<div class="loading" id="start" v-on:click="startAnimation">Tap to start</div>'
-
-        }else{
-            $audio.play();
-            $(document).one("touchstart",function() {
-                audio.play()
-            })
-            _self.elems = '<div class="elem0-1"></div><div class="elem0-2"></div><div class="elem0-3"></div><div class="elem0-4"></div><div class="elem0-5"></div><div class="elem0-6"></div><div class="elem0-7"></div><div class="elem0-8"></div><div class="elem1-1"></div><div class="elem1-2"></div><div class="elem1-3"></div><div class="elem1-4"></div>'
-        }*/
     }
 })

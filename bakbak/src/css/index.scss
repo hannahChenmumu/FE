@@ -101,7 +101,12 @@ body {
   }
   //闪光
   .elem0-7 {
-    @include px2rem(width, 750);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #fff!important;
     -webkit-animation: flashO .5s 6s both;
     animation: flashO .5s 6s both;

@@ -74,7 +74,12 @@ body {
   left: 4.26667rem;
   background-image: url(../images/0-3.png); }
 .scene1 .elem0-7 {
-  width: 10rem;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #fff !important;
   -webkit-animation: flashO .5s 6s both;
   animation: flashO .5s 6s both; }

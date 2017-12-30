@@ -1,0 +1,166 @@
+//定义一个变量和一个mixin
+$baseFontSize: 75;//默认基准font-size
+@mixin px2rem($name, $px){
+  #{$name}: $px / $baseFontSize * 1rem;
+}
+// 使用示例：
+//#app {
+//  @include px2rem(width, 240);
+//}
+
+body {
+  background: #fff url(../images/bg-red.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#app {
+  >div {
+    position: relative;
+    @include px2rem(width, 750);
+    overflow: hidden;
+    div {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-position: 0 0;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
+    }
+  }
+}
+
+.loading {
+  width: 100%;
+  @include px2rem(height, 100);
+  @include px2rem(font-size, 100);
+  @include px2rem(margin-top, 400);
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  -webkit-animation: flash 2s infinite;
+  animation: flash 2s infinite;
+}
+.scene1 {
+  //老人
+  .elem0-1 {
+    left: 0;
+    @include px2rem(bottom, 200);
+    @include px2rem(width, 600);
+    @include px2rem(height, 823 * 600 / 729);
+    background-image: url(../images/0-1.png);
+    -webkit-animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards;
+    animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards;
+  }
+  //人和小狗
+  .elem0-2 {
+    right: 0;
+    @include px2rem(bottom, 200);
+    @include px2rem(width, 700);
+    @include px2rem(height, 668 * 700 / 800);
+    background-image: url(../images/0-2.png);
+    -webkit-animation: bounceInRight 1s 3s both, fadeOut .3s 4s forwards;
+    animation: bounceInRight 1s 3s both, fadeOut .3s 4s forwards;
+  }
+  //炮仗
+  .elem0-3 {
+    @include px2rem(bottom, -60);
+    @include px2rem(width, 400);
+    @include px2rem(height, 938 * 400 / 458);
+    @include px2rem(left, 200);
+    background-image: url(../images/0-3.png);
+    -webkit-animation: fadeInUp 1s 4s both, fadeOut .5s 5s forwards;
+    animation: fadeInUp 1s 4s both, fadeOut .5s 5s forwards;
+  }
+  //组合
+  .elem0-4,
+  .elem0-5,
+  .elem0-6 {
+    -webkit-animation: fadeInDown 1s 5s both, fadeOut 1s 6.5s forwards;
+    animation: fadeInDown 1s 5s both, fadeOut 1s 6.5s forwards;
+  }
+  .elem0-4 {
+    left: 0;
+    @include px2rem(bottom, 200);
+    @include px2rem(width, 260);
+    @include px2rem(height, 823 * 260 / 729);
+    background-image: url(../images/0-1.png);
+  }
+  .elem0-5 {
+    right: 0;
+    @include px2rem(bottom, 220);
+    @include px2rem(width, 320);
+    @include px2rem(height, 666 * 320 / 948);
+    background-image: url(../images/0-2.png);
+  }
+  .elem0-6 {
+    @include px2rem(bottom, 210);
+    @include px2rem(width, 70);
+    @include px2rem(height, 938 * 70 / 458);
+    @include px2rem(left, 320);
+    background-image: url(../images/0-3.png);
+  }
+  //闪光
+  .elem0-7 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff!important;
+    -webkit-animation: flashO .5s 6s both;
+    animation: flashO .5s 6s both;
+  }
+  //烟花
+  .elem0-8 {
+    @include px2rem(top, 40);
+    @include px2rem(width, 500);
+    @include px2rem(height, 1332 * 500 / 632);
+    @include px2rem(left, 125);
+    background-image: url(../images/0-4.png);
+    -webkit-animation: fadeInUp .3s 5.8s backwards, fadeOut 1s 6.5s forwards;
+    animation: fadeInUp .3s 5.8s backwards, fadeOut 1s 6.5s forwards;
+  }
+  // 歌词第一句
+  //贵阳
+  .elem1-1 {
+    @include px2rem(top, 50);
+    @include px2rem(width, 448);
+    @include px2rem(height, 224);
+    @include px2rem(left, 154);
+    background-image: url(../images/1-1.png);
+    -webkit-animation: bounceInUp .5s 7.0s backwards;
+    animation: bounceInUp .5s 7.0s backwards;
+  }
+  //咋些
+  .elem1-2 {
+    @include px2rem(top, 240);
+    @include px2rem(width, 400);
+    @include px2rem(height, 246 * 400 / 572);
+    @include px2rem(left, 204);
+    background-image: url(../images/1-2.png);
+    -webkit-animation: bounceInUp .5s 7.5s backwards;
+    animation: bounceInUp .5s 7.5s backwards;
+  }
+  //弹起
+  .elem1-3 {
+    @include px2rem(top, 380);
+    @include px2rem(width, 580 );
+    @include px2rem(height, 464 * 580 / 228);
+    @include px2rem(left, 82);
+    background-image: url(../images/1-3.png);
+    -webkit-animation: bounceInUp .5s 8.0s backwards;
+    animation: bounceInUp .5s 8.0s backwards;
+  }
+  //可以
+  .elem1-4 {
+    @include px2rem(top, 624);
+    @include px2rem(width, 526);
+    @include px2rem(height, 242);
+    @include px2rem(left, 156);
+    background-image: url(../images/1-4.png);
+    -webkit-animation: bounceInUp .5s 8.5s backwards;
+    animation: bounceInUp .5s 8.5s backwards;
+  }
+
+}

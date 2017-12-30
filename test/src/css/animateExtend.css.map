@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAQC;EAPC,QAAS;IACP,OAAO,EAAE,CAAC;EAGZ,QAAS;IACP,OAAO,EAAE,CAAC;AAId,OAAQ;EACN,cAAc,EAAE,MAAM",
+"sources": ["animateExtend.scss"],
+"names": [],
+"file": "animateExtend.css"
+}

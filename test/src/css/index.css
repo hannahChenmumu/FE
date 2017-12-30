@@ -1,0 +1,127 @@
+body {
+  background: #fff url(../images/bg-red.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+#app > div {
+  position: relative;
+  width: 10rem;
+  overflow: hidden; }
+  #app > div div {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 0 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto; }
+
+.loading {
+  width: 100%;
+  height: 1.33333rem;
+  font-size: 1.33333rem;
+  margin-top: 5.33333rem;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  -webkit-animation: flash 2s infinite;
+  animation: flash 2s infinite; }
+
+.scene1 .elem0-1 {
+  left: 0;
+  bottom: 2.66667rem;
+  width: 8rem;
+  height: 9.03155rem;
+  background-image: url(../images/0-1.png);
+  -webkit-animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards;
+  animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards; }
+.scene1 .elem0-2 {
+  right: 0;
+  bottom: 2.66667rem;
+  width: 9.33333rem;
+  height: 7.79333rem;
+  background-image: url(../images/0-2.png);
+  -webkit-animation: bounceInRight 1s 3s both, fadeOut .3s 4s forwards;
+  animation: bounceInRight 1s 3s both, fadeOut .3s 4s forwards; }
+.scene1 .elem0-3 {
+  bottom: -0.8rem;
+  width: 5.33333rem;
+  height: 10.92285rem;
+  left: 2.66667rem;
+  background-image: url(../images/0-3.png);
+  -webkit-animation: fadeInUp 1s 4s both, fadeOut .5s 5s forwards;
+  animation: fadeInUp 1s 4s both, fadeOut .5s 5s forwards; }
+.scene1 .elem0-4,
+.scene1 .elem0-5,
+.scene1 .elem0-6 {
+  -webkit-animation: fadeInDown 1s 5s both, fadeOut 1s 6.5s forwards;
+  animation: fadeInDown 1s 5s both, fadeOut 1s 6.5s forwards; }
+.scene1 .elem0-4 {
+  left: 0;
+  bottom: 2.66667rem;
+  width: 3.46667rem;
+  height: 3.91367rem;
+  background-image: url(../images/0-1.png); }
+.scene1 .elem0-5 {
+  right: 0;
+  bottom: 2.93333rem;
+  width: 4.26667rem;
+  height: 2.99747rem;
+  background-image: url(../images/0-2.png); }
+.scene1 .elem0-6 {
+  bottom: 2.8rem;
+  width: 0.93333rem;
+  height: 1.9115rem;
+  left: 4.26667rem;
+  background-image: url(../images/0-3.png); }
+.scene1 .elem0-7 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff !important;
+  -webkit-animation: flashO .5s 6s both;
+  animation: flashO .5s 6s both; }
+.scene1 .elem0-8 {
+  top: 0.53333rem;
+  width: 6.66667rem;
+  height: 14.05063rem;
+  left: 1.66667rem;
+  background-image: url(../images/0-4.png);
+  -webkit-animation: fadeInUp .3s 5.8s backwards, fadeOut 1s 6.5s forwards;
+  animation: fadeInUp .3s 5.8s backwards, fadeOut 1s 6.5s forwards; }
+.scene1 .elem1-1 {
+  top: 0.66667rem;
+  width: 5.97333rem;
+  height: 2.98667rem;
+  left: 2.05333rem;
+  background-image: url(../images/1-1.png);
+  -webkit-animation: bounceInUp .5s 7.0s backwards;
+  animation: bounceInUp .5s 7.0s backwards; }
+.scene1 .elem1-2 {
+  top: 3.2rem;
+  width: 5.33333rem;
+  height: 2.29371rem;
+  left: 2.72rem;
+  background-image: url(../images/1-2.png);
+  -webkit-animation: bounceInUp .5s 7.5s backwards;
+  animation: bounceInUp .5s 7.5s backwards; }
+.scene1 .elem1-3 {
+  top: 5.06667rem;
+  width: 7.73333rem;
+  height: 15.73801rem;
+  left: 1.09333rem;
+  background-image: url(../images/1-3.png);
+  -webkit-animation: bounceInUp .5s 8.0s backwards;
+  animation: bounceInUp .5s 8.0s backwards; }
+.scene1 .elem1-4 {
+  top: 8.32rem;
+  width: 7.01333rem;
+  height: 3.22667rem;
+  left: 2.08rem;
+  background-image: url(../images/1-4.png);
+  -webkit-animation: bounceInUp .5s 8.5s backwards;
+  animation: bounceInUp .5s 8.5s backwards; }
+
+/*# sourceMappingURL=index.css.map */

@@ -16,7 +16,7 @@ body {
 #app {
   >div {
     position: relative;
-    @include px2rem(width, 750);
+    width: 100%;
     overflow: hidden;
     div {
       position: absolute;
@@ -44,12 +44,12 @@ body {
   //老人
   .elem0-1 {
     left: 0;
-    @include px2rem(bottom, 200);
-    @include px2rem(width, 600);
-    @include px2rem(height, 823 * 600 / 729);
+    bottom: 200px;
+    width: 300px;
+    height: 300px;
     background-image: url(../images/0-1.png);
-    -webkit-animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards;
-    animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards;
+    -webkit-animation: bounceInLeft 3s 2s both;
+    animation: bounceInLeft 3s 2s both;
   }
   //人和小狗
   .elem0-2 {

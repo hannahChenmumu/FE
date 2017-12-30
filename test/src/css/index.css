@@ -5,7 +5,7 @@ body {
 
 #app > div {
   position: relative;
-  width: 10rem;
+  width: 100%;
   overflow: hidden; }
   #app > div div {
     position: absolute;
@@ -28,12 +28,12 @@ body {
 
 .scene1 .elem0-1 {
   left: 0;
-  bottom: 2.66667rem;
-  width: 8rem;
-  height: 9.03155rem;
+  bottom: 200px;
+  width: 300px;
+  height: 300px;
   background-image: url(../images/0-1.png);
-  -webkit-animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards;
-  animation: bounceInLeft 1s 2s both, fadeOut .3s 3s forwards; }
+  -webkit-animation: bounceInLeft 3s 2s both;
+  animation: bounceInLeft 3s 2s both; }
 .scene1 .elem0-2 {
   right: 0;
   bottom: 2.66667rem;
